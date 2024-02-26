@@ -1,0 +1,17 @@
+.SettingsButton {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 9;
+  cursor: pointer;
+  color: #1976d2;
+  &:hover {
+    color:#1565c0;
+  }
+}
+
+.versionsContainer {
+  float: right;
+  margin-top: 25px;
+  text-align: right;
+}

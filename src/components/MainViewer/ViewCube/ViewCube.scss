@@ -1,0 +1,67 @@
+@import "../../styles.scss";
+
+$viewcube-side-length: 90px;
+
+.container {
+  @include base-cube-container($viewcube-side-length, 400px);
+  right: 32px;
+  bottom: 32px;
+}
+
+.cube {
+  @include base-cube($viewcube-side-length);
+
+  .part {
+    height: 100%;
+    width: 100%;
+  }
+
+  .part-hovered {
+    height: 100%;
+    width: 100%;
+    background: $color-terracotta;
+  }
+
+  &Face {
+    @include base-cube-face-container($viewcube-side-length);
+    display: grid;
+    grid-template-columns: 12% 1fr 12%;
+    grid-template-rows: 12% 1fr 12%;
+
+    &Back {
+      @include base-cube-face("back", $viewcube-side-length);
+    }
+
+    &Right {
+      @include base-cube-face("right", $viewcube-side-length);
+    }
+
+    &Front {
+      @include base-cube-face("front", $viewcube-side-length);
+    }
+
+    &Left {
+      @include base-cube-face("left", $viewcube-side-length);
+    }
+
+    &Bottom {
+      @include base-cube-face("bottom", $viewcube-side-length);
+    }
+
+    &Top {
+      @include base-cube-face("top", $viewcube-side-length);
+    }
+
+    &Top > span,
+    &Bottom > span,
+    &Right > span,
+    &Left > span,
+    &Front > span,
+    &Back > span {
+      &.hoveredText {
+        opacity: 1;
+        color: $color-white;
+      }
+    }
+  }
+}

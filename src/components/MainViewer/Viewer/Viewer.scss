@@ -1,0 +1,88 @@
+@use "~/styles/color.scss";
+
+.viewer {
+  width: 100%;
+  height: auto;
+}
+
+.canvasViewer {
+  width: 100%;
+  height: 100%;
+  min-width: 1240px;
+}
+
+.selectBox {
+  position: fixed;
+  border: 1px solid #0662ac;
+  background-color: rgba(6, 98, 172, 0.15);
+}
+
+#lengthLabel {
+  position: absolute;
+  min-width: 60px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  pointer-events: none;
+}
+
+#angleLabel {
+  position: absolute;
+  min-width: 30px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+  left: -30px;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  // color: #e79819;
+}
+
+.label {
+  position: absolute;
+  min-width: 60px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+  pointer-events: none;
+
+  //@mui Card component
+  max-height: 186px !important;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  overflow: hidden;
+}
+
+.measurementLabelContainer {
+  @extend .label;
+  font-weight: normal;
+  padding: 0;
+}
+
+.deltaLabel {
+  color: color.$white;
+  opacity: 0.87;
+  width: 35px;
+  float: left;
+  padding: 8px;
+}
+
+.measurementLabel {
+  min-width: 60px;
+  background-color: color.$label-background;
+  padding: 8px;
+  overflow: hidden;
+}

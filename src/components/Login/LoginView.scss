@@ -1,0 +1,55 @@
+.container {
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+
+  .card {
+    // width: 400px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 100px;
+    border-radius: 20px;
+
+    .title {
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      color: black;
+    }
+
+    .inputDescription {
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 0px;
+    }
+
+
+    .input {
+      & input::placeholder {
+        text-align: center; // Center-align the placeholder text
+      }
+    }
+
+    .centerAdornment {
+      margin-left: "50%" // or your relevant measure
+    }
+
+    .centerText {
+      text-align: "center"            
+    }
+
+    .button {
+      margin: 20px 0px;
+      border-radius: 50px;
+      background-color: black;
+      color: white;
+      padding: 10px 32px;
+      font-weight: bold;
+    }
+  }
+}

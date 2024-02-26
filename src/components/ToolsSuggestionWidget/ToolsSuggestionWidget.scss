@@ -1,0 +1,131 @@
+.dialogWrapper [role="dialog"] {
+  padding: 24px;
+}
+
+.summaryInfobox {
+  padding: 24px;
+  border: 1px solid #c9e1f5;
+  border-radius: 5px;
+  background: aliceblue;
+  margin-bottom: 24px;
+}
+
+.highlightValue {
+  font-size: 24px;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.groupLabel {
+  background: #005b94;
+  padding: 16px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.panelContainer {
+  padding: 16px;
+  border: 1px solid #c9e1f5;
+  background: aliceblue;
+}
+
+.groupWrapper {
+  margin-bottom: 24px;
+}
+
+.toolImg {
+  max-width: 100%;
+}
+
+.toolType {
+  display: block;
+  font-size: 24px;
+  padding: 24px;
+  text-align: left;
+}
+
+.toolId {
+  font-size: 20px;
+  color: #005b94;
+  padding: 0px 24px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.toolDataRow { 
+  padding: 16px 0px;
+  border-bottom: 1px solid #c9e1f5;
+}
+
+.toolDataValue {
+  text-align: right;
+}
+
+.buttonsContainer {
+  margin-top: 16px;
+  background: #fff;
+  color: #005b94;
+  cursor: pointer;
+  > div {
+    border: 1px solid #e6e6e6;
+    padding: 16px 24px;
+  }
+}
+
+.buttonsLink {
+  color: #005b94 !important;
+}
+
+.buttonIcon { 
+  vertical-align: middle;
+  padding-right: 8px;
+  margin-top: -1px;
+}
+
+.stockCounterContainer {
+  align-self: left;
+  display: flex;
+}
+
+.stockCounter {
+  color: #fff;
+  padding: 0.2em 0.5em;
+  margin: 18px 8px;
+  font-weight: bolder;
+  border-radius: 0.3em;
+  background-color: #00683c;
+}
+
+.stockSlash {
+  margin: 1.2em 0em;
+  font-weight: 1000;
+}
+
+.toolContainer {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 16px;
+  margin-top: 24px;
+}
+
+.strategyImage { 
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.cuttingDataRow {
+  border-top: 1px solid #dee2e6;
+  span {
+    font-size: 20px;
+    line-height: 20px;
+    color: #7f7f7f;
+  }
+}
+
+.toolImgSpinner {
+  position: absolute;
+  margin-left: 55px;
+  margin-top: 55px;
+}

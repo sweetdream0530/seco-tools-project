@@ -1,0 +1,224 @@
+// Sizes
+
+$zero: 0px;
+$base-unit: 16px;
+$half-unit: calc($base-unit / 2);
+$n-base-unit: -$base-unit;
+$n-half-unit: -$half-unit;
+$quarter-unit: calc($half-unit / 2);
+$n-quarter-unit: -$quarter-unit;
+$half-n-quarter-unit: $half-unit + $quarter-unit;
+$n-half-n-quarter-unit: -$half-n-quarter-unit;
+
+$toolbox-height: 72px;
+
+$default-border-radius: 4px;
+$half-radius: calc($default-border-radius / 2);
+
+// Colors
+
+$color-white: #ffffff;
+$color-success: #37c18e;
+$color-warning: #e79819;
+$color-error: #f44336;
+$color-info: #91a19f;
+$cool-grey: #91a19f;
+$text-grey: #151a1e;
+$color-disabled: #b9bbc0;
+$color-gunmetal: #5f6b6a;
+$color-terracotta: #e15e37;
+$background-color: #ffffffcc;
+$box-shadow-color: #00000026;
+
+$regular-font-family: Roobert, sans-serif;
+$big-font-size: 16px;
+$regular-font-size: 14px;
+$small-font-size: 12px;
+
+$animation-time: 0.4s;
+
+/* Button */
+$button-active-background-color: rgba(145, 161, 159, 0.05);
+$button-border-radius: 4px;
+
+/* Default scroll bar */
+
+$scrollbar-color: #00000066;
+$scrollbar-width: 4px;
+
+/* Works on Firefox */
+* {
+  scrollbar-width: $scrollbar-width;
+  scrollbar-color: $scrollbar-color $color-white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: $scrollbar-width;
+}
+
+*::-webkit-scrollbar-track {
+  margin: 4px 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-color;
+  border-radius: 2px;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+// Extendable classes
+@mixin font-big {
+  font-size: $big-font-size;
+}
+
+@mixin font-regular {
+  font-size: $regular-font-size;
+}
+
+@mixin font-small {
+  font-size: $small-font-size;
+}
+
+@mixin font-bold {
+  font-weight: bold;
+}
+
+@mixin font-default {
+  @include font-regular;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@mixin title {
+  @include font-big;
+  @include font-bold;
+}
+
+@mixin subtitle {
+  @include font-small;
+  @include font-bold;
+  color: $color-gunmetal;
+}
+
+@mixin action {
+  @include font-big;
+  letter-spacing: 0.5px;
+}
+
+@mixin price-font {
+  font-size: 11px;
+}
+
+@mixin default-shadow {
+  box-shadow: 0 3px 10px 0 $box-shadow-color;
+}
+
+@mixin default-border {
+  border: 1px solid $cool-grey;
+}
+
+@mixin default-border-radius {
+  border-radius: $default-border-radius;
+}
+
+@mixin absolute-center {
+  display: grid;
+  place-items: center;
+}
+
+@mixin widget-scrollable {
+  overflow-y: auto;
+  margin-right: $n-base-unit - $n-quarter-unit;
+  scrollbar-width: thin;
+}
+
+// Cube
+@mixin base-cube-container($cube-side-length, $perspective) {
+  width: $cube-side-length;
+  height: $cube-side-length;
+  perspective: $perspective;
+  position: absolute;
+}
+
+@mixin base-cube($cube-side-length) {
+  width: $cube-side-length;
+  height: $cube-side-length;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+@mixin base-cube-face-container($cube-side-length) {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: $cube-side-length;
+  height: $cube-side-length;
+  background-color: $color-white;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid $color-info;
+    z-index: -1;
+  }
+}
+
+@mixin base-cube-face($face-orientation, $cube-side-length) {
+  $viewcube-face-translateZ: calc($cube-side-length / 2);
+
+  @if $face-orientation == 'front' {
+    transform: rotateX(90deg) rotateY(270deg) translateZ(-$viewcube-face-translateZ);
+    @include base-flipped-cube-face-text;
+  } @else if $face-orientation == 'back' {
+    transform: rotateZ(90deg) rotateX(90deg) translateZ(-$viewcube-face-translateZ);
+    @include base-flipped-cube-face-text;
+  } @else if $face-orientation == 'left' {
+    transform: rotateX(90deg) translateZ($viewcube-face-translateZ) rotateY(180deg);
+    @include base-flipped-cube-face-text;
+  } @else if $face-orientation == 'right' {
+    transform: rotateX(90deg) translateZ(-$viewcube-face-translateZ);
+    @include base-flipped-cube-face-text;
+  } @else if $face-orientation == 'top' {
+    transform: translateZ($viewcube-face-translateZ) rotateY(180deg) rotateZ(90deg);
+    @include base-cube-face-text;
+  } @else if $face-orientation == 'bottom' {
+    transform: rotateZ(90deg) translateZ(-$viewcube-face-translateZ);
+    @include base-cube-face-text;
+  } @else {
+    @error "Unknown face #{$direction}.";
+  }
+}
+
+@mixin base-cube-face-text {
+  & > span {
+    @include title;
+    color: $color-gunmetal;
+    opacity: 0.5;
+    font-family: 'Roobert', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+  }
+}
+
+@mixin base-flipped-cube-face-text {
+  & > span {
+    transform: scale(-1, -1);
+  }
+
+  @include base-cube-face-text;
+}

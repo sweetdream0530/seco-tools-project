@@ -1,0 +1,187 @@
+.detailContainer {
+    box-shadow: 0px 0px 8px 0px rgba(51, 51, 51, 0.25);
+    margin: 80px 48px 70px 48px;
+}
+
+.detailHeader {
+    padding: 16px 32px 16px 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HeaderText {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.overviewSection {
+    padding: 14px 0 30px 48px;
+    border-top: 1px solid var(--Grey-3, #ccc);
+}
+
+.overviewHeaderText {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.overviewTextSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.selectedText {
+    margin-left: 59px;
+    margin-right: 24px;
+}
+
+.materialText {
+    display: flex;
+    padding: 2px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background: var(--Blue-40, #99e9ff);
+}
+
+.setupSection {
+    padding: 24px 65px 24px 48px;
+    align-items: flex-start;
+    gap: 48px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid var(--Grey-3, #ccc);
+}
+
+.machineImageSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.textStyle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.machineImage {
+    margin-top: 16px;
+    width: 200px;
+    height: 200px;
+}
+
+.subTextStyle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.strategyImage {
+    margin-top: 16px;
+    width: 160px;
+    height: 160px;
+}
+
+.itemSection {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.itemListContainer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemContainer {
+    display: flex;
+    padding: 8px 40px 8px 32px;
+    align-items: center;
+    gap: 48px;
+}
+
+.itemImage {
+    width: 80px;
+    height: 80px;
+}
+
+.itemTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.roleTextStyle {
+    color: var(--Seco-Blue, #006cea);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 6px;
+}
+
+.cutDataSection {
+    margin-top: 8px;
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.stepSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.cutDataItem {
+    border-bottom: 1px solid var(--Grey-3, #ccc);
+    display: flex;
+    padding: 4px 8px;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cutDataText {
+    color: var(--Grey-Font, #666);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.cutDataInfoText {
+    color: var(--Black, #333);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.cuttingDataInfoSection {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 1px;
+}
+
+.class::-webkit-scrollbar {
+    width: 4px;
+}

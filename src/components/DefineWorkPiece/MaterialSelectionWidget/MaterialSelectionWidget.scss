@@ -1,0 +1,1131 @@
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.panelContainer {
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 999;
+}
+
+.categoryContainer {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern","liga","pnum";
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  overflow-y: auto;
+  float: left;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  padding-left: 24px;
+  padding-right: 12px;
+  background-color: #f4f9fd;
+}
+
+.materialListContainer {
+  z-index: 1000;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  float: left;
+  flex: 2;
+  width: 50vw;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  display: block;
+  position: absolute;
+  left: -50vw;
+}
+
+.calibrationHelpIconSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  line-height: 1;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  position: relative;
+  vertical-align: bottom;
+  z-index: 10000;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.calibrationHelpIcon {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  white-space: nowrap;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  font-family: seco-iconset!important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  color: #a7a7a7;
+  font-size: 24px;
+  margin-bottom: 10px;
+  line-height: 0;
+  vertical-align: sub;
+}
+
+.calibrationRangeValue {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1;
+  padding: 10px;
+  line-height: 3.25;
+}
+
+.categorySearchHeader {
+  background-color: aliceblue;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  margin: 0 0 10px;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  color: #a7a7a7;
+  font-size: 1em;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.materialSearchHeader {
+  background-color: aliceblue;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  display: flex;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  text-align: left;
+}
+
+.materialListHeader {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  //margin: 0 0 10px;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  color: #a7a7a7;
+  font-size: 1em;
+  //margin-top: 26px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.materialButton {
+  width: 100%;
+  height: 100%;
+}
+
+.nextButton { 
+  margin-top: 124px !important;
+}
+
+.searchMaterialInput {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  line-height: 1.25;
+  padding: 0.2rem;
+  transition: all .15s ease-in-out;
+  appearance: none;
+  border: 1px solid #006CEA;
+  width: 100%;
+  display: block;
+  color: #006CEA;
+  padding-left: 10px;
+  padding-right: 0;
+  border-radius: 3px;
+  text-overflow: ellipsis;
+} 
+
+.favouriteListArrowSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #006CEA;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1;
+  line-height: 1;
+  padding: 0 10px;
+}
+
+.favouriteListArrow {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  color: #006CEA;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  font-family: seco-iconset!important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  font-size: 24px;
+}
+
+.favouriteListTextSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #006CEA;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  line-height: 1;
+  padding: 0 10px;
+  flex: 8;
+  text-align: left;
+}
+
+.favouriteListText {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #006CEA;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.favouriteListIconSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #006CEA;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1;
+}
+
+.favouriteListIcon {
+  width: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  display: inline-block;
+  padding: 3px;
+  color: #fff;
+  background-color: #006CEA;
+  border-radius: 3px;
+}
+
+.listHeader {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: row!important;
+  align-items: center;
+  background-color: #f4f9fd;
+  border-top: solid 1px #c9e1f5;
+  border-right: solid 1px #c9e1f5;
+  border-left: solid 1px #c9e1f5;
+  border-bottom: none;
+  min-height: 56px;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.categoryDiv {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  padding: 12px 0;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.categoryDivSelected {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  background-color: #f4f9fd;
+  border-top: solid 1px #c9e1f5;
+  border-right: solid 1px #c9e1f5;
+  border-left: solid 1px #c9e1f5;
+  border-bottom: none;
+  padding: 12px 0;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  background: rgb(0, 91, 148);
+  span {
+    color: #fff;
+  }
+}
+
+.searchContainer {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: row!important;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: aliceblue;
+  background-color: #f4f9fd;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.favouriteMaterialContainer {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row!important;
+  align-items: center;
+  background-color: #f4f9fd;
+  border-top: solid 1px #c9e1f5;
+  border-right: solid 1px #c9e1f5;
+  border-left: solid 1px #c9e1f5;
+  padding: 10px 0;
+  border-bottom: solid 1px #c9e1f5;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.materialText {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.calibrationIcon {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap;
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  cursor: pointer;
+  outline: 0;
+  line-height: 1.25;
+  transition: all .15s ease-in-out;
+  appearance: none;
+  float: right;
+  background-color: transparent;
+  color: #005b94;
+  font-weight: 400;
+  border: none;
+  outline-color: transparent;
+  border-radius: 3px;
+  padding: 4px;
+  font-family: TradeGothicNormal,"Arial Narrow",arial,sans-serif;
+}
+
+.calibrationValueContainer {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  line-height: 36px;
+  display: flex;
+  text-align: left;
+}
+
+.calibrationIconSpan {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap;
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  cursor: pointer;
+  outline: 0;
+  line-height: 1.25;
+  transition: all .15s ease-in-out;
+  appearance: none;
+  float: right;
+  background-color: transparent;
+  color: #005b94;
+  font-weight: 400;
+  border: none;
+  outline-color: transparent;
+  border-radius: 3px;
+  padding: 5px;
+  font-family: TradeGothicNormal,"Arial Narrow",arial,sans-serif;
+}
+
+.materialTextSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  line-height: 1;
+  text-align: left;
+  margin-left: 16px;
+  flex: 8;
+}
+
+.categoryArrowIconSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1;
+  line-height: 1;
+  padding: 0 10px;
+}
+
+.categoryIcon {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  min-width: 1em;
+  min-height: 1em;
+  text-align: center;
+  border-radius: 3px;
+  color: #333;
+  background-color: #f6d3a6;
+  display: inline-block;
+  font-size: 150%;
+  font-weight: 700;
+  line-height: 36px;
+  width: 36px;
+}
+
+.categoryIconSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1;
+  line-height: 1;
+  padding: 0 10px;
+}
+
+.categoryArrowIcon {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern", "liga", "pnum";
+  color: #006CEA;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: all 0.15s ease-in-out;
+  transition-property: height, background, opacity, position, min-height, max-height;
+  font-family: seco-iconset !important;
+  font-size: small;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  font-size: 24px;
+}
+
+.materialListStack {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: row!important;
+  align-items: center;
+  background-color: #f4f9fd;
+  border-top: solid 1px #c9e1f5;
+  border-right: solid 1px #c9e1f5;
+  border-left: solid 1px #c9e1f5;
+  min-height: 57px;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.materalHeader {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: row!important;
+  align-items: center;
+  background-color: #f4f9fd;
+  border-top: solid 1px #c9e1f5;
+  border-right: solid 1px #c9e1f5;
+  border-left: solid 1px #c9e1f5;
+  min-height: 57px;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.materialCheckboxSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  cursor: pointer;
+  text-align: center!important;
+  flex: 1;
+  line-height: 1;
+  max-width: 40px;
+  padding: 10px;
+}
+
+.materialCheckbox {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  cursor: pointer;
+  outline: 0;
+  line-height: 1.25;
+  transition: all .15s ease-in-out;
+  appearance: none;
+  background-color: transparent;
+  color: #005b94;
+  font-weight: 400;
+  border: none;
+  outline-color: transparent;
+  border-radius: 3px;
+  padding: 5px;
+  font-family: TradeGothicNormal,"Arial Narrow",arial,sans-serif;
+}
+
+.favouriteIcon {
+  -webkit-text-size-adjust: 100%;
+  text-transform: none;
+  cursor: pointer;
+  color: #005b94;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  vertical-align: middle;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+.materialDescriptionSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  cursor: pointer;
+  line-height: 1;
+  flex: 4;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.materialDescription {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  text-align: left;
+}
+
+.referenceMaterialSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  cursor: pointer;
+  line-height: 1;
+  flex: 3;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.referenceMaterial {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  text-align: left;
+}
+
+.materialIconSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,opacity,position,min-height,max-height;
+  cursor: pointer;
+  flex: 1;
+  line-height: 1;
+  padding: 10px;
+}
+
+.materialIconSpanLabel {
+  margin-top: 16px;
+  margin-left: 24px;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.materialIconSpanLabelHidden{
+  visibility: hidden;
+}
+
+.materialIcon {
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 3px;
+  color: #333;
+  margin-top: 16px;
+  background-color: #99E9FF;
+}
+
+
+.selectedMaterialIcon {
+  font-weight: 400;
+  margin-left: 21px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 28px;
+  text-align: center;
+  border-radius: 3px;
+  color: #333;
+  margin-top: 16px;
+  background-color: #99E9FF;
+}
+.favouriteButtonSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  cursor: pointer;
+  text-align: center!important;
+  flex: 1;
+  line-height: 1;
+  max-width: 60px;
+  padding: 10px;
+}
+
+.favouriteButton {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  cursor: pointer;
+  outline: 0;
+  line-height: 1.25;
+  transition: all .15s ease-in-out;
+  appearance: none;
+  background-color: transparent;
+  font-weight: 400;
+  border: none;
+  outline-color: transparent;
+  border-radius: 3px;
+  padding: 5px;
+  color: #fff;
+  font-family: TradeGothicNormal,"Arial Narrow",arial,sans-serif;
+}
+
+.calibrationButtonSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,opacity,position,min-height,max-height;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1;
+  white-space: nowrap;
+  flex: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sliderSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 6;
+  padding: 10px;
+  line-height: 3.25;
+}
+
+.sliderInputSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1.3;
+  line-height: 1;
+  padding: 10px;
+}
+
+.sliderInput {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  font: inherit;
+  outline: 0;
+  line-height: 1.25;
+  padding: 0.2rem;;
+  transition: all .15s ease-in-out;
+  appearance: none;
+  border: 1px solid #005b94;
+  width: 100%;
+  display: block;
+  color: #005b94;
+  padding-left: 10px;
+  padding-right: 0;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.confirmButtonSpan {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  line-height: 1;
+  flex: 2;
+  padding: 10px;
+  margin: 10px;
+}
+
+.confirmButton {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  cursor: pointer;
+  outline: 0;
+  line-height: 1.25;
+  transition: all .15s ease-in-out;
+  appearance: none;
+  background-color: #005b94;
+  color: #fff;
+  font-weight: 400;
+  outline-color: #002c48;
+  border: none;
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  padding: 5px;
+  font-family: TradeGothicNormal,"Arial Narrow",arial,sans-serif;
+}
+
+.listHeaderCheckbox {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1;
+  line-height: 1;
+  padding: 0 10px;
+  max-width: 40px;
+}
+
+.listHeaderFavourite {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1;
+  line-height: 1;
+  padding: 0 10px;
+  max-width: 60px;
+}
+
+.calibrationUnit {
+  margin-left: 5px;
+  text-align: left;
+}
+
+.listHeaderIcon {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  flex: 1;
+  line-height: 1;
+  padding: 0 10px;
+}
+
+.listHeaderText {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  line-height: 1;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  color: #a7a7a7;
+  font-size: 1em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.listHeaderDescription {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  line-height: 1;
+  padding: 0 10px;
+  flex: 4;
+}
+
+.listHeaderRefMaterial {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  line-height: 1;
+  padding: 0 10px;
+  flex: 3;
+}
+
+.listHeaderCalibration {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  box-sizing: inherit;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+  line-height: 1;
+  padding: 0 10px;
+  flex: 2.5;
+}
+
+.calibrationMenu {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern","liga","pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: TradeGothicLight,"Arial Narrow",arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: row!important;
+  align-items: center;
+  border-right: solid 1px #c9e1f5;
+  border-left: solid 1px #c9e1f5;
+  min-height: 57px;
+  border-top: none;
+  background-color: aliceblue;
+  transition: all .15s ease-in-out;
+  transition-property: height,background,opacity,position,min-height,max-height;
+}
+
+.configBtn {
+  margin-bottom: 50px;
+}
+
+.tableWrapper {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+  border-bottom: solid 1px #c9e1f5;
+  border-top: solid 1px #c9e1f5;
+  background: #f0f8ff;
+}
+
+.noMaterials { 
+  border-top: solid 1px #c9e1f5;
+  border-right: solid 1px #c9e1f5;
+  border-left: solid 1px #c9e1f5;
+  background-color: #f0f8ff;
+  padding: 40px;
+}

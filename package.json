@@ -1,0 +1,138 @@
+{
+  "name": "recognizer-web-client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --open --config ./webpack.dev.config.js",
+    "build": "webpack --config ./webpack.release.config.js",
+    "debug": "webpack-dev-server --host 0.0.0.0 --hot --config ./webpack.dev.config.js",
+    "test": "node --expose-gc ./node_modules/jest/bin/jest --logHeapUsage --maxWorkers 1 --maxConcurrency=1 --noStackTrace --passWithNoTests --silent --no-watchman --forceExit --ci --config=jest.config.js --no-compilation-cache",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --ext .ts,.tsx ./src --fix",
+    "jesto": "jest"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@microsoft/signalr": "^7.0.9",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.5",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@tweenjs/tween.js": "^20.0.3",
+    "axios": "^1.4.0",
+    "connected-react-router": "^6.9.3",
+    "history": "^5.3.0",
+    "immutability-helper": "^3.1.1",
+    "mui": "0.0.1",
+    "object-hash": "^3.0.0",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "14.2.1",
+    "react-items-carousel": "^2.8.0",
+    "react-redux": "^8.0.7",
+    "react-router-dom": "^6.12.1",
+    "react-virtuoso": "^4.5.0",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.2.3",
+    "redux-thunk": "^2.4.2",
+    "string-to-color": "^2.2.2",
+    "three": "^0.153.0",
+    "typesafe-actions": "^5.1.0",
+    "uuid": "^9.0.0",
+    "validator": "^13.11.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@side/jest-runtime": "^1.0.0",
+    "@swc/core": "^1.2.203",
+    "@swc/jest": "^0.2.21",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^27.5.1",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^16.11.1",
+    "@types/object-hash": "3.0.6",
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^18.2.5",
+    "@types/react-router-dom": "^5.3.1",
+    "@types/redux-mock-store": "^1.0.4",
+    "@types/three": "^0.133.1",
+    "@types/validator": "^13.11.5",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "autoprefixer": "^10.3.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.4.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "expose-gc": "^1.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.4.0",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "postcss": "^8.3.9",
+    "postcss-loader": "^6.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-mock-store": "^1.5.4",
+    "redux-saga-test-plan": "^4.0.6",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "svgo-loader": "^3.0.0",
+    "tailwindcss": "^3.3.5",
+    "ts-jest": "^28.0.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^5.1.6",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx|js|jsx)$": "ts-jest"
+    },
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/test/jest/__mocks__/styleMock.js"
+    },
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!redux-persist)"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

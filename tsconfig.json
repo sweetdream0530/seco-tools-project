@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "allowJs": true,
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": false,
+    "outDir": "$$ts-jest$$",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "src/components/Viewer/components/**/*.js",
+    "src/components/Viewer/loaders/*.js",
+    "public",
+    "node_modules"
+  ]
+}

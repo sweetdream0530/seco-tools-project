@@ -1,0 +1,113 @@
+.itemContainer {
+    border-bottom: 1px solid var(--Grey-3, #ccc);
+    border-top: 1px solid var(--Grey-3, #ccc);
+}
+
+.itemContainer td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.itemContainer td:first-child {
+    padding-left: 32px;
+    padding-right: 48px;
+}
+
+.itemContainer td:nth-child(3) {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.itemContainer td:last-child {
+    padding-right: 40px;
+    padding-left: 48px;
+}
+
+.toolImg {
+    width: 80px;
+    height: 80px;
+}
+
+.roleText {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.designationText {
+    margin-top: 4px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Seco-Blue, #006cea);
+}
+
+.toolContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.stockStyle {
+    width: 32px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #00b464;
+}
+
+.featureCountStyle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 20px;
+    color: var(--Seco-Blue, #006cea);
+    text-align: center;
+    border: 1px solid var(--Seco-Blue-40, #99c4f7);
+    background: var(--Seco-Blue-5, #f1f7fd);
+}
+
+.amountStyle {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonStyle {
+    width: 28px;
+    border-radius: 2px;
+    border: 1px solid var(--Grey-3, #ccc);
+    height: 40px;
+    flex-shrink: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--Seco-Blue, #006cea);
+    text-align: center;
+}
+
+.amountText {
+    width: 48px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid var(--Grey-3, #ccc);
+    color: var(--Seco-Blue, #006cea);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

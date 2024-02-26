@@ -1,0 +1,28 @@
+.ToolHeader {
+    padding: 11px 16px 11px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HeaderText {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.tableHeader {
+    height: 73px;
+    border-top: 1px solid var(--Grey-3, #ccc);
+    border-bottom: 1px solid var(--Grey-3, #ccc);
+}
+
+.featureText {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 111px;
+}

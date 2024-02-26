@@ -1,0 +1,19 @@
+.propertiesContainer {
+    border: 1px solid #000;
+    // position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 180px;
+    overflow: scroll;
+    & > div {
+        margin: auto;
+        text-align: left;
+        padding: 5px 16px;
+    }
+    background-color: #f4f9fd;
+}
+
+.parameterBar {
+    overflow: auto;
+    height: 100%;
+}
